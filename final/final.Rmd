@@ -1,7 +1,7 @@
 ---
 title: "Çalışmanızın Başlığı"
 author: 
-  - İsim Soyisim[^1]
+  - Afranur Melek Çevik[^1]
 bibliography: ../bibliography/biblio.bib
 csl: ../csl/apa-tr.csl
 header-includes:
@@ -34,7 +34,7 @@ knitr::opts_chunk$set(cache = FALSE, echo = TRUE, message = FALSE, warning = FAL
 <!-- ======================================================================= -->
 <!-- ============================== NOTLAR ================================= -->
 <!-- ======================================================================= -->
-[^1]: Öğrenci Numarası, [Github Repo](https://github.com/KULLANICI_ADINIZ/REPO_ADINIZ)
+[^1]: 21080561, [Github Repo](https://github.com/KULLANICI_ADINIZ/REPO_ADINIZ)
 
 # Final Hakkında Önemli Bilgiler
 
@@ -66,8 +66,13 @@ Analize ait R kodları bu bölümde başlamalıdır. Bu bölümde veri setini R'
 
 ```{r}
 library(tidyverse)
+
+
+
 library(here)
 survey <- read_csv(here("../data/survey.csv"))
+
+    
 ```
 
 Rmd dosyasında kod bloklarının bazılarında kod seçeneklerinin düzenlendiğine dikkat edin. 
