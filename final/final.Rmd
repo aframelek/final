@@ -1,5 +1,5 @@
 ---
-title: "Çalışmanızın Başlığı"
+title: "İllere ve konulara Göre Okuma Kültürü"
 author: 
   - Afranur Melek Çevik[^1]
 bibliography: ../bibliography/biblio.bib
@@ -25,7 +25,7 @@ urlcolor: blue
 fontsize: 12pt
 biblio-style: apalike
 abstract: |
-  Bu bölümde çalışmanızın özetini yazınız.
+ okuma kültürünün illere göre etkisi ve bunun kütüphanelerdeki kitap sayısına yansıması.
 ---
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(cache = FALSE, echo = TRUE, message = FALSE, warning = FALSE)
@@ -34,7 +34,7 @@ knitr::opts_chunk$set(cache = FALSE, echo = TRUE, message = FALSE, warning = FAL
 <!-- ======================================================================= -->
 <!-- ============================== NOTLAR ================================= -->
 <!-- ======================================================================= -->
-[^1]: 21080561, [Github Repo](https://github.com/KULLANICI_ADINIZ/REPO_ADINIZ)
+[^1]: 21080561, [aframelek](https://https://github.com/aframelek/final.git)
 
 # Final Hakkında Önemli Bilgiler
 
@@ -46,18 +46,16 @@ knitr::opts_chunk$set(cache = FALSE, echo = TRUE, message = FALSE, warning = FAL
 
 \colorbox{WildStrawberry}{Daha fazla bilgi için proje klasöründeki README.md dosyasını okuyunuz.}
 
-# Giriş
-Bu taslak size proje ödevinizi yazarken yardımcı olması amacıyla oluşturulmuştur. Ödevlerinizde, makalelerinizde, sunumlarınızda ve projelerinizde kullandığınız tüm bilgi kaynaklarına atıfta bulunmalısınız. Alıntı ve gönderme yapmak okuyuculara çalışmanızda kullandığınız/başvurduğunuz  kaynaklara ulaşma imkanı sağlar. **Her ne kadar kendi sözlerinizi kullanıyor olsanız da, başkalarına ait fikirleri çalışmanızda aktarıyorsanız bu fikirlerin kaynağını belgelemek zorundasınız. Aksi takdirde akademik intihal yapmış olursunuz.** Yazım konusunda @aydinonat:2007'ye başvurabilirsiniz. 
+# Giriş 
 
-
-Proje ödevinizde yer alan başlıkların bu metinde yer alan başlıkları kesinlikle içermesi gerekmektedir. Burada kullanılan başlıklar haricinde farklı alt başlıklar da kullanabilirsiniz. Projenizi yazarken bu dosyayı taslak olarak kullanıp içeriğini projenize uyarlayınız.
+ Türkiyede ki kitap okuma kültürü bunun llere ve konulara göre değişkenlik göstermesi ve buna bağlı olarak kütüphanede olan kitap sayılarına göre bir araştırma yaptım. bu araştırmada @ortacs2014turkiye , @odabacs2008universite , @akkilik2011turkiye , @cseref2022okuma , @singhal1998comparison , @vuong2021impacts makalelerinden yardım aldım. 
 
 ## Çalışmanın Amacı
-Bu bölümde yaptığınız çalışmanın amacından ve öneminden birkaç paragraf ile bahsediniz.
+ Projemde okuma kültürünün nelere bağlı olarak değiştiğini, illerin ve kitapların konularının okuma kültürü üzerindeki etkilerini incelemeyi amaçladım. tüik verilerinden yararlanarak hangi illerde hangi tür kitapların tercih edildiğini ve halk kütüphanelerinde bu kitapların ne kadar sayıda bulunduğunu inceledim.
 
 ## Literatür 
 
-Bu bölümde konu ile ilgili olarak okuduğunuz makaleleri referans vererek tartışınız. **Her makaleyi ayrı başlık altında tek tek özetlemeyiniz.** Literatür taramasında **en az altı** makaleye atıf yapılması ve bu makalelerden **en az ikisinin İngilizce** olması gerekmektedir.
+ Makalelerimi okuma kültürünü inceleyen makaleler olarak seçtim.Makalelerde, Türkiye'deki kitap okuma alışkanlıkları, okuma sıklığı, tercih edilen kitap türleri ve okuma motivasyonları gibi konular ele alınmaktadır. Aynı zamanda Türkiye'nin dünya genelindeki kitap okuma istatistikleriyle karşılaştırılması yapılarak Türkiye'nin genel durumu değerlendirilmektedir. kitap okuma alışkanlıklarının sosyal yaşam üzerindeki etkileri incelenmektedir. Kitap okuma alışkanlığının artmasıyla birlikte insanların kültürel bilinçlerinin arttığı, empati yeteneklerinin geliştiği ve düşünsel kapasitelerinin genişlediği belirtilmektedir. Ayrıca, kitap okumanın toplumda birleştirici bir etkisi olduğu ve iletişim becerilerini güçlendirdiği vurgulanmaktadır.Türkiye'nin kitap okuma değerlerini dünya genelindeki diğer ülkelerle karşılaştırmaktadır. Makalelerde, dünya genelindeki kitap okuma istatistikleri, diğer ülkelerdeki kitap okuma kültürü ve değerleri hakkında bilgiler sunulmaktadır. Bu karşılaştırmalar, Türkiye'nin kitap okuma alanında hangi noktalarda güçlü olduğunu veya hangi alanlarda gelişmeye ihtiyaç duyduğunu belirlemeye yardımcı olmaktadır. 
 
 # Veri 
 Bu bölümde çalışmanızda kullandığınız veri setinin kaynağını, ham veri üzerinde herhangi bir işlem yaptıysanız bu işlemleri ve veri seti ile ilgili özet istatistikleri tartışınız. Bu bölümde tüm değişkenlere ait özet istatistikleri (ortalama, standart sapma, minimum, maksimum, vb. değerleri) içeren bir tablo (Tablo \ref{tab:ozet}) olması zorunludur. Tablolarınıza gerekli göndermeleri bir önceki cümlede gösterildiği gibi yapınız. [@perkins:1991]
@@ -70,16 +68,14 @@ library(tidyverse)
 
 
 library(here)
-survey <- read_csv(here("../data/survey.csv"))
-
-    
+survey <- read_csv(here("../data/illere_ve_konularina_gore_halk_kutuphanelerindeki_kitap_sayisi.csv"))
 ```
 
 Rmd dosyasında kod bloklarının bazılarında kod seçeneklerinin düzenlendiğine dikkat edin. 
 
 ```{r, echo=FALSE}
 library(xtable) 
-# devtools::install_github("emraher/summarytools")
+# devtools::install_github("aframelek/summarytools")
 library(summarytools)
 st_options(lang = "tr")
 ```
@@ -120,7 +116,7 @@ survey %>%
 
 
 # Sonuç
-Bu bölümde çalışmanızın sonuçlarını özetleyiniz. Sonuçlarınızın başlangıçta belirlediğiniz araştırma sorusuna ne derece cevap verdiğini ve ileride bu çalışmanın nasıl geliştirilebileceğini tartışınız.
+türkiyenin okuma kültürünün çok zayıf olduğunu, ve okumayı tercih ettikleri konuların kendi kültürlerine göre değişiklik gösterdiğini gördüm. genç nufusun yasadığı şehirler nispeten daha çok okur yazar olduğu için kitap okuma alışkanlığı da daha fazla. 
 
 **Kaynakça bölümü Rmarkdown tarafından otomatik olarak oluşturulmaktadır. Taslak dosyada Kaynakça kısmında herhangi bir değişikliğe gerek yoktur.** 
 
